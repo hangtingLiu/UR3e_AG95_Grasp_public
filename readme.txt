@@ -1,0 +1,4 @@
+# UR3e_AG95_Grasp_public
+基础环境配置直接参考另一个仓库：https://github.com/hangtingLiu/VLM_Grasp_Interactive
+相比起另一个仓库的环境配置，该仓库目前first commit版本的代码注释了没有用到的多模态交互部分，直接鼠标点击目标+SAM分割+Graspnet给出目标夹爪位姿，另外主要加入了避障运动规划部分，直接下载pyroboplan和pinocchio两个库即可。
+目前该版代码在轨迹规划时没有加入被夹取物体的避障部分，如需更加完善，此处可以查看pyroboplan库自行实现，思路就是根据库中函数再加入末端物体一个碰撞体即可。
